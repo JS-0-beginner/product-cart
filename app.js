@@ -95,4 +95,41 @@ function()
     updateProductNumber('case',59,false); //Boolean
 }
 
-)
+);
+
+/*-------------------------------*\
+  ////////// Remove-One \\\\\\\\\\
+\*-------------------------------*/
+
+document.getElementById('remove-one').addEventListener('click',
+
+function()
+         {
+        
+           const element = document.getElementById("delete-one");
+            element.parentNode.removeChild(element);
+
+    document.getElementById('sub-total').innerText = '0';
+    document.getElementById('tax-amount').innerText = '0';
+    document.getElementById('total-price').innerText = '0';
+         }
+         
+         
+);
+
+/*-------------------------------*\
+  ////////// Remove-two \\\\\\\\\\
+\*-------------------------------*/
+
+document.getElementById('remove-two').addEventListener('click',
+
+function()
+         {
+        
+           const secondElement = document.getElementById("delete-two");
+           secondElement.parentNode.removeChild(secondElement);
+           document.getElementById('sub-total').innerText = '0';
+           document.getElementById('tax-amount').innerText = '0';
+           document.getElementById('total-price').innerText = '0';
+         }
+);
